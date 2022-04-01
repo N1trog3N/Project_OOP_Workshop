@@ -47,4 +47,5 @@ def create_receipt():
         dev = models.TV(typeofdevice, brand, diagonal, description)
 
     new_receipt = receipt.Receipt(typeofdevice, dateofreceive, dateofrepair, initials, status)
+
     return new_receipt.__str__()
