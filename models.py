@@ -6,7 +6,7 @@ class Device:
         self._description = description
 
     def __str__(self):
-        return f"Device: {self._type}, Brand: {self._brand}, Description: {self._description}"
+        return f"Устройство: {self._type}, Модель: {self._brand}, Описание: {self._description}"
 
 
 class Phone(Device):
@@ -23,11 +23,11 @@ class Notebook(Device):
 
     def __init__(self, type, brand, os, dateofmanufacturing, description):
         super(Notebook, self).__init__(type, brand, description)
-        self._dateOfManufacturing = dateofmanufacturing
+        self._dateofmanufacturing = dateofmanufacturing
         self._os = os
 
     def __str__(self):
-        return f"{self._type}\n{super().__str__()}, OS: {self._os}, Date of manufacturing: {self._dateOfManufacturing}"
+        return f"{self._type}\n{super().__str__()}, OС: {self._os}, Дата выпуска: {self._dateofmanufacturing}"
 
 
 class TV(Device):
@@ -37,4 +37,4 @@ class TV(Device):
         self._diagonal = diagonal
 
     def __str__(self):
-        return f"{self._type}\n{super().__str__()}, Diagonal: {self._diagonal}"
+        return f"{self._type}\n{super().__str__()}, Диагональ экрана: {self._diagonal}"
